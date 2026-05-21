@@ -8,5 +8,48 @@ body{
 
 section{
     color: black;
+    background-color: pink;
+}
+
+header, footer{
+    background-color: lightgreen;
+}
+
+nav{
+    background-color: lightyellow;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+
+}
+main{
+    flex: 3;
+    background-color: aquamarine;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    text-decoration: none;
+    color:#112A46;
+    background-color:darkseagreen;
+    padding: 1rem 1rem;
+    margin: 1rem 2rem;
+    border-radius: 100% 50% 100% 50%;
+    transition: 1s;
+
+
+}
+nav a:hover{
+    box-shadow: 10px 10px 5px gray;
+    transform: scale(1.1);
+    display: inline-block;
 }
 
