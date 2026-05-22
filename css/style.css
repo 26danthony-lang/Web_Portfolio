@@ -6,29 +6,70 @@ body{
     background-color: gainsboro;
 }
 
+h1, h2, h3, h4, ul, p, a{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-size: 2.027rem;
+font-size: clamp(2.027rem, -0.7235858585858588rem + 7.2383838383838395vw, 5.61rem);
+}
+
+h2{
+    font-size: 1.802rem;
+font-size: clamp(1.802rem, -0.045797979797979504rem + 4.862626262626262vw, 4.209rem);
+}
+
+h3{
+    font-size: 1.602rem;
+font-size: clamp(1.602rem, 0.4082626262626263rem + 3.1414141414141414vw, 3.157rem);
+}
+
+a{
+    font-size: 1.602rem;
+}
 section{
     color: black;
     background-color: pink;
 }
 
-header, footer{
+header{
     background-color: lightgreen;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 100;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+
+
 nav{
+    
     background-color: lightyellow;
     flex: 1;
+    
+    height: 100%;
+    padding-top: 60px;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 100px;
     align-items: center;
-    gap: 20px;
-    padding-top: 50px;
+    position: fixed;
+   
 
 }
 main{
     flex: 3;
     background-color: aquamarine;
+    margin-left: 393px;
+    padding: 0px 20px;
 }
 
 .center{
@@ -42,7 +83,7 @@ nav a{
     background-color:darkseagreen;
     padding: 1rem 1rem;
     margin: 1rem 2rem;
-    border-radius: 100% 50% 100% 50%;
+    border-radius: 20px;
     transition: 1s;
 
 
